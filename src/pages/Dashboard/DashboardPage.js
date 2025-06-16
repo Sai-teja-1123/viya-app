@@ -1,7 +1,7 @@
 // src/pages/DashboardPage.js
 import React, { useState } from 'react';
-import Button from '../components/Button.js';
-import Modal from '../components/Modal.js';
+import Button from '../../components/dashboard/button.js';
+import Modal from '../../components/dashboard/modal.js';
 
 const DashboardPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

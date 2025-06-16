@@ -64,7 +64,7 @@ const ProfileDetailsModal = ({ profile, isOpen, onClose }) => {
                 <img
                   key={index}
                   src={photo}
-                  alt={`${profile.name}'s photo ${index + 1}`}
+                  alt={`${profile.name} ${index + 1}`}
                   className="w-full h-24 object-cover rounded-lg shadow-sm"
                   onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/150x150/9CA3AF/ffffff?text=N/A" }}
                 />

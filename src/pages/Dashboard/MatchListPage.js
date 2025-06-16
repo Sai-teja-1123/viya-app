@@ -1,10 +1,10 @@
 // src/pages/MatchListPage.js
 import React, { useState, useEffect } from 'react';
-import Button from '../components/Button.js';
-import ProfileCard from '../components/ProfileCard.js';
-import ProfileDetailsModal from '../components/ProfileDetailsModal.js';
-import Filters from '../components/Filters.js';
-import { mockProfiles } from '../data/mockData.js'; // Import mockProfiles from data
+import Button from '../../components/dashboard/button.js';
+import ProfileCard from '../../components/dashboard/profilecard.js';
+import ProfileDetailsModal from '../../components/dashboard/ProfileDetailsModal.js';
+import Filters from '../../components/dashboard/Filters.js';
+import { mockProfiles } from '../../data/mockdata.js'; // Fixed path
 
 const MatchListPage = () => {
   const [filters, setFilters] = useState({

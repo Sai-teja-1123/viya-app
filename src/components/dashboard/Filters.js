@@ -1,7 +1,7 @@
 // src/components/Filters.js
 import React from 'react';
 import Button from './button.js'; // Import Button
-import { indianStates, indianCities } from '../data/mockData.js'; // Import data
+import { indianStates, indianCities } from '../../data/mockdata.js'; // Fixed path - go up two levels
 
 const Filters = ({ filters, onFilterChange, onApplyFilters }) => {
   return (

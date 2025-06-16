@@ -1,7 +1,7 @@
 // src/components/Navbar.js
 import React from 'react';
 
-const Navbar = ({ onNavigate }) => {
+const Navbar = ({ onNavigate, onLogout }) => {
   return (
     <nav className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-4 shadow-lg rounded-b-lg">
       <div className="container mx-auto flex flex-wrap items-center justify-between">
@@ -19,9 +19,10 @@ const Navbar = ({ onNavigate }) => {
         </div>
         <div className="flex items-center space-x-4 mt-2 md:mt-0">
           <button onClick={() => onNavigate('dashboard')} className="hover:text-purple-200 transition-colors">Dashboard</button>
-          <button onClick={() => onNavigate('match-list')} className="hover:text-purple-200 transition-colors">Match List</button>
           <button onClick={() => onNavigate('edit-profile')} className="hover:text-purple-200 transition-colors">Edit Profile</button>
+          <button onClick={() => onNavigate('match-list')} className="hover:text-purple-200 transition-colors">Match List</button>
           <button onClick={() => onNavigate('settings')} className="hover:text-purple-200 transition-colors">Settings</button>
+          <button onClick={onLogout} className="bg-red-500 hover:bg-red-600 px-3 py-1 rounded-md transition-colors">Logout</button>
         </div>
       </div>
     </nav>

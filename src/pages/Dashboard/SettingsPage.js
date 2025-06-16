@@ -1,7 +1,7 @@
 // src/pages/SettingsPage.js
 import React, { useState } from 'react';
-import Button from '../components/Button.js'; // Added .js extension
-import Modal from '../components/Modal.js';   // Added .js extension
+import Button from '../../components/dashboard/button.js'; // Fixed path
+import Modal from '../../components/dashboard/modal.js';   // Fixed path
 
 const SettingsPage = () => {
   const [isPrivate, setIsPrivate] = useState(false);
