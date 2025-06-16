@@ -1,8 +1,8 @@
 // src/pages/EditProfilePage.js
 import React, { useState } from 'react';
-import Button from '../components/Button.js'; // Added .js extension
-import Modal from '../components/Modal.js';   // Added .js extension
-import { indianStates, indianCities } from '../data/mockData.js'; // Added .js extension
+import Button from '../../components/dashboard/button.js'; // Fixed path
+import Modal from '../../components/dashboard/modal.js';   // Fixed path
+import { indianStates, indianCities } from '../../data/mockdata.js'; // Fixed path
 
 const EditProfilePage = () => {
   const [profileData, setProfileData] = useState({

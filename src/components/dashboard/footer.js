@@ -7,9 +7,9 @@ const Footer = () => {
       <div className="container mx-auto text-center text-sm">
         <p>&copy; {new Date().getFullYear()} Viya Matrimony. All rights reserved.</p>
         <div className="flex justify-center space-x-4 mt-2">
-          <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-          <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-          <a href="#" className="hover:text-white transition-colors">Contact Us</a>
+          <button className="hover:text-white transition-colors">Privacy Policy</button>
+          <button className="hover:text-white transition-colors">Terms of Service</button>
+          <button className="hover:text-white transition-colors">Contact Us</button>
         </div>
       </div>
     </footer>
